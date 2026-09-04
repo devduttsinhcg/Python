@@ -54,7 +54,7 @@ print("ab">"bcd")
 a="       hello"
 print(a.lstrip())
 print("I am a \'Student\'")
-name="Devdutt"
+name="Devdutt sinh Solanki"
 age=18
 print(f"My name is {name} and my age is {age}.")
 text="Hello world is the stupidiest thing ever"
@@ -64,6 +64,7 @@ print(text. split("world"))
 print(10 +"dev")
 
 
+print(name. split())
 
 
 
