@@ -1,3 +1,7 @@
+a=["2026","08","19"]
+print("-".join(a))
+City= input("Your city is: ")
+print(City)
 age1, age2 =int(input("Please enter your ages: ").split())
 
 marks=15.786968
