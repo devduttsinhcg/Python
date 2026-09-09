@@ -1,45 +1,45 @@
-# Number= int(input("Please enter a number: "))
-# if Number%2==0:
-#     print(f"{Number} is Even")
+Number= int(input("Please enter a number: "))
+if Number%2==0:
+    print(f"{Number} is Even")
 
-# if Number%2!=0:
-#     print(f"{Number} is Odd")
+if Number%2!=0:
+    print(f"{Number} is Odd")
 
-# print(type(Number))
+print(type(Number))
 
 
-# Number= int(input("Please enter a number: "))
-# if Number%2==0:
-#     print(f"{Number} is Even")
+Number= int(input("Please enter a number: "))
+if Number%2==0:
+    print(f"{Number} is Even")
 
-# else:
-#     print(f"{Number} is Odd")
+else:
+    print(f"{Number} is Odd")
 
-# print(type(Number))
+print(type(Number))
 
-# is_indian = input("Are you Indian ? Yes or No: ").lower().strip()
+is_indian = input("Are you Indian ? Yes or No: ").lower().strip()
 
-# if is_indian=="yes":
-#     age=int(input("Enter you age: "))
-#     if age>=18:
-#         print("You are eligible to vote.")
-#     else:
-#         print("You are not eligible to vote")    
+if is_indian=="yes":
+    age=int(input("Enter you age: "))
+    if age>=18:
+        print("You are eligible to vote.")
+    else:
+        print("You are not eligible to vote")    
 
-# else:
-#     print("You are not eligible to vote")
+else:
+    print("You are not eligible to vote")
 
 # #Task 4
-# Marks=int(input("Enter your marks: "))
+Marks=int(input("Enter your marks: "))
 
-# if Marks>=90:
-#     print("Excellent")
-# elif Marks>=60:
-#     print("Good")
-# elif Marks>=40:
-#     print("Pass")    
-# else:
-#     print("Fail")        
+if Marks>=90:
+    print("Excellent")
+elif Marks>=60:
+    print("Good")
+elif Marks>=40:
+    print("Pass")    
+else:
+    print("Fail")        
 
 #Task 5
 operator=int(input("Enter a Number of following Operations that You want to Perform:\n 1 for Addition\n 2 for Subtraction\n 3 for Multiplication\n 4 for division\n Enter the operator number: "))
