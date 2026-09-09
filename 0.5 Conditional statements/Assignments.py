@@ -104,7 +104,7 @@ if num7 == 1:
 elif  num7 == 2:
     print("TUESDAY")
 elif  num7 == 3:
-    print("WEDNESDAY"))
+    print("WEDNESDAY")
 elif  num7 == 4:
     print("THURSDAY")
 elif num7 == 5:
@@ -124,7 +124,7 @@ elif Marks >= 40:
 else:
     print("Fail") 
 
-Task 15
+#Task 15
 num8 = int(input("Enter your number: "))
 
 if num8 == 1:
@@ -142,7 +142,7 @@ AGE = int(input("Enter your age: "))
 if AGE >= 18 and AGE <= 60:
     print("Age is between 18 and 60")
 
-Task 17
+#Task 17
 Student_Marks = int(input("Enter your marks: "))
 
 if Student_Marks >= 40:
@@ -228,7 +228,7 @@ if num12 < 0 or num12 > 100:
 else:
     print(f"{num12} is not a special  number")
 
-Task 26
+#Task 26
 is_closed = False
 
 if is_closed is not True:
@@ -253,12 +253,16 @@ else:
     print(f"{num14} is between 10 and 50")
 
 #Task 29
-is_student =
-has_id = 
-has_ticket = 
+is_student =input("Is this a student of Codinggita (yes/no): ").lower().strip()
+has_id = input("Does this student have id (yes/no):").lower().strip()
+has_ticket = input("Does this student have ticket (yes/no):").lower().strip()
 
-if is_student and has_id and has_ticket:
+if is_student == "yes" and has_id == "yes" and has_ticket == "yes":
     print("Allowed")
+elif is_student == "no" and has_id == "no" and has_ticket == "no":
+    print("Not Allowed")
+else:
+    print("Enter a valid value") 
 
 #Task 30
 age = int(input("Enter your age: "))
