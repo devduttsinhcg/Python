@@ -45,16 +45,19 @@
 #         print("Scalene triangle") 
 # else:
 #     print("Invalid triangle")               
-ch = input("Enter a character: ")
+# ch = input("Enter a character: ")
 
-if 'A' <= ch <= 'Z':
-    print("Uppercase")
+# if 'A' <= ch <= 'Z':
+#     print("Uppercase")
 
-elif 'a' <= ch <= 'z':
-    print("Lowercase")
+# elif 'a' <= ch <= 'z':
+#     print("Lowercase")
 
-elif '0' <= ch <= '9':
-    print("Digit")
+# elif '0' <= ch <= '9':
+#     print("Digit")
 
-else:
-    print("Special character")
+# else:
+#     print("Special")
+
+a="hello "
+print(a*10)
