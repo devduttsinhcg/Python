@@ -345,7 +345,100 @@ if marks1 > 35 and marks2 > 35 and marks3 > 35:
     elif 60 <= average <= 74:
         print("First Class")
     elif 50 <= average <= 59:
-        print("Secind Class")    
+        print("Second Class")
+    elif 35 < average <= 49:
+            print("Pass")
+else:
+    print("Fail")
+
+# Q26
+Day = int(input("Enter the date: "))
+Month = int(input("Enter the month: "))
+Year = int(input("Enter the year: "))
+
+if 1 <= Day <= 31 and 1 <= Month <= 12:
+
+    if Month == 2:
+        if Day == 29:
+            if Year % 400 == 0 or (Year % 4 == 0 and Year % 100 != 0):
+                print(f"{Day}/{Month}/{Year} is valid")
+            else:
+                print("Invalid Date")
+        elif Day <= 28:
+            print(f"{Day}/{Month}/{Year} is valid")
+        else:
+            print("Invalid Date")
+
+    elif Month == 1 or Month == 3 or Month == 5 or Month == 7 or Month == 8 or Month == 10 or Month == 12:
+        print(f"{Day}/{Month}/{Year} is valid")
+
+    elif Day <= 30:
+        print(f"{Day}/{Month}/{Year} is valid")
+
+    else:
+        print("Invalid Date")
+
+else:
+    print("Invalid Date")
+
+# Q27
+Hours = int(input("Enter the hours: "))
+Minutes = int(input("Enter the Minutes: "))
+seconds = int(input("Enter the seconds: "))
+
+if 0 <= Hours <= 23 and 0 <= Minutes <= 59 and 0 <= 59:
+    print("Valid time") 
+else:
+    print("Invalid Time") 
+
+# Q28
+name1,age1 = input("Enter the name of first person: "), int(input("Enter the age of first person: "))   
+name2,age2 = input("Enter the name of secind person: "), int(input("Enter the age of second person: "))
+name3,age3 = input("Enter the name of secind person: "), int(input("Enter the age of second person: "))
+
+if age1 > age3 and age2 > age3:
+    print(f"{name3} is the youngest")
+elif age1 > age2 and age3 > age2:
+    print(f"{name2} is the youngest")
+elif age3 > age1 and age2 > age1:
+    print(f"{name1} is the youngest")
+elif age1 == age2 and age2 > age3:
+    print(f"{name3} is the youngest")
+elif age1 == age3 and age3 > age2:
+    print(f"{name2} is the youngest")    
+elif age3 == age2 and age2 > age1:
+    print(f"{name1} is the youngest")
+else:
+    print("Enter valid ages")   
+
+# Q29
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+
+if num1 > num2 and num1 < num3:
+    print(f"{num1} is the second-largest number.")
+if num1 > num3 and num1 < num2:
+    print(f"{num1} is the second-largest number.")
+if num2 > num1 and num2 < num3:
+    print(f"{num2} is the second-largest number.")  
+if num2 > num3 and num2 < num1:
+    print(f"{num2} is the second-largest number.")          
+if num3 > num1 and num2 < num2:
+    print(f"{num3} is the second-largest number.")
+if num3 > num2 and num3 < num1:
+    print(f"{num3} is the second-largest number.")    
+else:
+    print("Enter valid number.")    
+    
+
+    
+
+
+            
+
+    
+
 
 
       

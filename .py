@@ -59,5 +59,43 @@
 # else:
 #     print("Special")
 
-a="hello "
-print(a*10)
+# a="hello "
+# print(a*10)
+
+# number = int(input("Enter your number: "))
+
+# for i in range(2, number):
+#         if number % i == 0:
+#             print(f"{number} is not a prime number.")
+# else:
+#     print(f"{number} is a prime number.")    
+
+# #
+# name = input("Enter your name: ")
+# length = len(name)
+# sum = ""
+
+# for i in range (length-1, -1, -1):
+#     sum = sum + name[1]
+
+# if name == sum:
+#     print(f" {name} is a palindrome.")
+# else:
+#     print(f"{name} is not a palindrome.")    
+
+# 
+name = input("Enter your name: ").strip().lower()
+length = len(name)
+
+for i in range (length-1, -1, -1):
+    a = (name[i])
+    b = print(a ,sep="", end="")
+if b == name:
+    print("")
+    print(f"{name} is a palindrome.")
+else:
+    print("")
+    print(f"{name} is not a plaindrome.") 
+
+    
+    
