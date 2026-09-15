@@ -84,18 +84,95 @@
 #     print(f"{name} is not a palindrome.")    
 
 # 
-name = input("Enter your name: ").strip().lower()
-length = len(name)
+# name = input("Enter your name: ").strip().lower()
+# length = len(name)
 
-for i in range (length-1, -1, -1):
-    a = (name[i])
-    b = print(a ,sep="", end="")
-if b == name:
-    print("")
-    print(f"{name} is a palindrome.")
+# for i in range (length-1, -1, -1):
+#     a = (name[i])
+#     b = print(a ,sep="", end="") 
+
+# for row in range(3):
+#     for column in range(4):
+#         print("*", end="")
+    
+# for row in range(3):
+#     for column in range(4):
+#         print("*", end="")
+#         print()
+# x = 10
+
+# if x > 5:
+#     print("A")
+# if x > 8:
+#     print("B")
+# else:
+#     print("C")
+# for i in range(5):
+#     print(i)
+
+# print(i)
+# ch = input("Enter character: ")
+
+# if ch == "a" or "e" or "i" or "u" :
+#     print("vowel")
+
+# word ="banana"
+# count=0
+
+# for i in word:
+#     if i =="a":
+#         count = count + 1
+#     print(count)    
+# for i in range(3):
+#     print(i)
+#     print(i + 10)
+
+# word = "hello"
+
+# for i in range(len(word)):
+#     if word[i] == "l":
+#         print(word[i])
+
+# word = "computer"
+
+# for i in range(len(word)):
+#     if word[i] == "o":
+#         print("Found")
+
+# word = "Python"
+
+# for i in range(len(word)):
+#     print(word[i])
+
+# text = "Hello123"
+
+# count = 0
+
+# for i in range(len(text)):
+#     ch = text[i]
+
+#     if ord(ch) >= 48 and ord(ch) <= 57:
+#         count = count + 1
+
+# print(count)
+# num = int(input("Enter your number:"))
+
+# factorial = 1
+# for i in range(1,num+1):
+#     factorial = factorial * i
+# print(factorial)    
+     
+# year = int(input("Enter the year:"))
+
+# if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+#     print("Leap year")
+year = int(input("Whats the year you want to check \n"))
+
+if year % 4 ==0:
+    if year % 100 ==0:
+        if year % 400 == 0:
+            print(True)
+        print(False)
+    print(True)
 else:
-    print("")
-    print(f"{name} is not a plaindrome.") 
-
-    
-    
+    print(False)

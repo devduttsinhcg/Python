@@ -195,17 +195,17 @@ elif Cost_price == Selling_price:
 else:
        print(f"Loss percent = {Loass_percent}")
 
-# Q16
-# unit = int(input("Enter the units consumed: "))
-# a = (unit-100)
-# b = (unit-200)
+ # Q16
+unit = int(input("Enter the units consumed: "))
+a = (unit-100)
+b = (unit-200)
 
-# if 0 < unit <= 100:
-#     print(f"Electricity bill = {unit*5}")  
-# elif 0 < unit <= 200:
-#     print(f"Electricity bill = {a*7 + 500}")
-# elif unit > 200:
-#     print(f"Electricity bill = {b*10 +1200}") 
+if 0 < unit <= 100:
+    print(f"Electricity bill = {unit*5}")  
+elif unit <= 200:
+    print(f"Electricity bill = {a*7 + 500}")
+elif unit > 200:
+    print(f"Electricity bill = {b*10 +1200}") 
 
 # Q17
 operator=int(input("Enter a Number of following Operations that You want to Perform:\n 1 for Addition\n 2 for Subtraction\n 3 for Multiplication\n 4 for division\n Enter the operator number: "))
@@ -228,18 +228,18 @@ else:
     print("Invalid Operator")
 
 # Q18
-# temperature = int(input("Enter the value of temperature in celecius: "))    
+temperature = int(input("Enter the value of temperature in celecius: "))    
 
-# if temperature > 35:
-#     print("Hot")
-# elif 26 <= temperature <= 35:
-#     print("Normal")    
-# elif 16 <= temperature <= 25:
-#     print("Cold")
-# elif 15 <= temperature <= 0:
-#     print("Very cold")
-# else:
-#     print("Freezing") 
+if temperature > 35:
+    print("Hot")
+elif 26 <= temperature <= 35:
+    print("Normal")    
+elif 16 <= temperature <= 25:
+    print("Cold")
+elif 15 <= temperature <= 0:
+    print("Very cold")
+else:
+    print("Freezing") 
 
 # Q19
 number = int(input("Enter your n umber: "))
