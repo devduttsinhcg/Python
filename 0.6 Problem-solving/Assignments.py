@@ -445,11 +445,13 @@ else:
 #     Sum or Addition
 
 # 2 ALOGORITHM:
+# Start
 # Read first number
 # Read second number
 # Add both numbers
 # store their sum in total
 # print(total)
+# Stop
 
 # 3 Solution:
 num1 = int(input("Enter the first number: "))
@@ -470,11 +472,13 @@ print(sum)
 #    Even or Odd
 
 # 2 ALGORITHM:
+# Start
 # Read the number
 #if % by 2 ==0
 #print(Even)
 #if % by 2 ==1
 #print(Odd)
+# Stop
 
 # 3 Solutuion
 num = int(input("Enter the number: "))
@@ -495,11 +499,13 @@ if num % 2 == 1:
 #    largest number
 
 # 2 ALGORITHM:
+# Start
 # Read the three numbers:
 # Store all the values in varaibles:
 # compare all three numbers:
 # num is greater than rest both numbers
 #print(num is the largest number)
+# Stop
 
 # 3 Solutuion:
 
@@ -533,12 +539,13 @@ else:
 #    Eligible to vote
 
 # 2 ALOGORITHM:
+# Start
 # Read the person's age
 # store the value in age
 # if Age is greater than 18
 # print eligible to vote
 # Otherwise not eligible to vote
-# stop
+# Stop
 
 # 3 Solution
 
@@ -564,18 +571,20 @@ elif age < 18:
 
 
 # 2 ALOGORITHM:
+# Start
 # Read the price
 # Store it in variable
 # if it is grater than 2000
-# apply 20 percent disccount by multiplying it by 0.2
+# apply 20 percent disccount by multiplying price it by 0.2
+# Add them
 # print(Final price)
 # Stop
 
 # 3 Solution
 Price = float(input("Enter the purchase amount: "))
 
-if Price > 500:
-    print(f"Final amount = {Purchase_amount*0.2}")
+if Price > 2000:
+    print(f"Final amount = {Price*0.2 + Price}")
 
     
 
