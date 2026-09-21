@@ -522,9 +522,60 @@ if num3 > num2 and num3 < num1:
 else:
     print("Enter valid number.") 
 
+# Question 4
+
+# 1 IPO MODEL:
+# Input:
+#    take the age
+# Processing:
+#    check if its is greater than 18
+# Output:
+#    Eligible to vote
+
+# 2 ALOGORITHM:
+# Read the person's age
+# store the value in age
+# if Age is greater than 18
+# print eligible to vote
+# Otherwise not eligible to vote
+# stop
+
+# 3 Solution
+
+age = int(input("enter your age: "))
+
+if age >= 18 and age <= 120:
+     print("Can vote")
+elif age < 18:
+    if age < 0:
+        print("Invalid")
+    else:
+        print("Cannot vote")        
+
+# Question 5
+
+# 1 IPO MODEL:
+# Input:
+#     take the price
+# Processing:
+#     apply discount
+# Output:
+#     print(price)
 
 
-            
+# 2 ALOGORITHM:
+# Read the price
+# Store it in variable
+# if it is grater than 2000
+# apply 20 percent disccount by multiplying it by 0.2
+# print(Final price)
+# Stop
+
+# 3 Solution
+Price = float(input("Enter the purchase amount: "))
+
+if Price > 500:
+    print(f"Final amount = {Purchase_amount*0.2}")
 
     
 
