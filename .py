@@ -166,13 +166,27 @@
 
 # if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
 #     print("Leap year")
-year = int(input("Whats the year you want to check \n"))
 
-if year % 4 ==0:
-    if year % 100 ==0:
-        if year % 400 == 0:
-            print(True)
-        print(False)
-    print(True)
-else:
-    print(False)
+total = 0
+
+for i in range(5):
+    marks = int(input("Enter your marks: "))
+    total = total + marks
+    if marks < 35:
+        print("Failed")
+        break
+percentage = (total/5)
+
+if percentage <= 100 and percentage >= 90:
+    print(f"total = {total}, percentage = {percentage}, grade = A")
+elif percentage <= 89 and percentage >= 80:
+    print(f"total = {total}, percentage = {percentage}, grade = B")
+elif percentage <= 79 and percentage >= 70:
+    print(f"total = {total}, percentage = {percentage}, grade = C")
+elif percentage <= 69 and percentage >= 60:
+    print(f"total = {total}, percentage = {percentage}, grade = D")
+elif percentage <= 59 and percentage >= 50:
+    print(f"total = {total}, percentage = {percentage}, grade = E")    
+elif percentage <= 49 and percentage >= 35:
+    print(f"total = {total}, percentage = {percentage}, grade = F")
+  

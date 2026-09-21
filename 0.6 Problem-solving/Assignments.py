@@ -431,8 +431,97 @@ if num3 > num2 and num3 < num1:
 else:
     print("Enter valid number.")    
     
+# --------------------------------------------------------------------------------------------------------------------
 
-    
+
+# Question 1
+
+# 1 IPO MODEL:
+# Input:
+#     Take two numbers
+# Processing:
+#     Add them
+# Output:
+#     Sum or Addition
+
+# 2 ALOGORITHM:
+# Read first number
+# Read second number
+# Add both numbers
+# store their sum in total
+# print(total)
+
+# 3 Solution:
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+sum = num1 + num2
+
+print(sum)
+
+# Question 2
+
+# 1 IPO MODEL:
+# Input:
+#    Take a number
+# Processing:
+#    Check if it is even or odd
+# Output:
+#    Even or Odd
+
+# 2 ALGORITHM:
+# Read the number
+#if % by 2 ==0
+#print(Even)
+#if % by 2 ==1
+#print(Odd)
+
+# 3 Solutuion
+num = int(input("Enter the number: "))
+
+if num % 2 == 0:
+    print("Even")
+if num % 2 == 1:
+    print("Odd")
+
+# Question 3
+
+# 1 IPO MODEL:
+# Input:
+#      take three number
+# Processing:
+#    compare them
+# Output:
+#    largest number
+
+# 2 ALGORITHM:
+# Read the three numbers:
+# Store all the values in varaibles:
+# compare all three numbers:
+# num is greater than rest both numbers
+#print(num is the largest number)
+
+# 3 Solutuion:
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+
+if num1 > num2 and num1 < num3:
+    print(f"{num1} is the largest number.")
+if num1 > num3 and num1 < num2:
+    print(f"{num1} is the largest number.")
+if num2 > num1 and num2 < num3:
+    print(f"{num2} is the largest number.")  
+if num2 > num3 and num2 < num1:
+    print(f"{num2} is the largest number.")          
+if num3 > num1 and num2 < num2:
+    print(f"{num3} is the largest number.")
+if num3 > num2 and num3 < num1:
+    print(f"{num3} is the largest number.")    
+else:
+    print("Enter valid number.") 
+
 
 
             
