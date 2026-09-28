@@ -167,26 +167,105 @@
 # if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
 #     print("Leap year")
 
-total = 0
+# total = 0
+
+# for i in range(5):
+#     marks = int(input("Enter your marks: "))
+#     total = total + marks
+#     if marks < 35:
+#         print("Failed")
+#         break
+# percentage = (total/5)
+
+# if percentage <= 100 and percentage >= 90:
+#     print(f"total = {total}, percentage = {percentage}, grade = A")
+# elif percentage <= 89 and percentage >= 80:
+#     print(f"total = {total}, percentage = {percentage}, grade = B")
+# elif percentage <= 79 and percentage >= 70:
+#     print(f"total = {total}, percentage = {percentage}, grade = C")
+# elif percentage <= 69 and percentage >= 60:
+#     print(f"total = {total}, percentage = {percentage}, grade = D")
+# elif percentage <= 59 and percentage >= 50:
+#     print(f"total = {total}, percentage = {percentage}, grade = E")    
+# elif percentage <= 49 and percentage >= 35:
+#     print(f"total = {total}, percentage = {percentage}, grade = F")
+  
+# import turtle, colorsys, math
+# t = turtle.Turtle()
+# turtle.bgcolor("black")
+# turtle.tracer(0)
+# t.speed(0)
+# h, a = 0, 0
+# def draw():
+#     global h,a
+#     t.clear()
+#     for i in range(120):
+#         c = colorsys.hsv_to_rgb(h, 2, 2)
+#         t.color(c)
+#         t.penup()
+#         t.goto(0, 0)
+#         t.pendown()
+#         x = math.sin(a + i) * 200
+#         y = math.cos(a + i * 2) * 200
+#         t.goto(x, y)
+#         t.dot(15)
+#         h += 0.0001
+#     turtle.update()
+#     a += 0.05
+#     turtle.ontimer(draw, 10)
+# draw()
+# turtle.done    
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(f"{j *j}", end=" ")
+#     print()    
+  
+# for i in range(5):
+#     for j in range(i+1):
+#         print(chr(65+j), end=" ")
+#     print()
+
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print(2*j, end=" ")
+#     print()    
+# for i in range(5):
+#     for j in range(1,6):
+#         print(j , end=" ")
+#     print()
+# num = 1
+# for i in range(3):
+#     for j in range(3):
+#         print(num, end=" ")
+#         num += 1
+#     print()    
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(f"{(i,j)}", end="")
+#     print()    
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(i, j)
+# for i in range(5):
+#     for j in range(1,6-i):
+#         print(j,end="")
+#     print()
+for i in range(5):
+    for j in range(5-i,0, -1):
+        print(j,end="")
+#     print()
+# for i in range(1,6):
+#     for j in print()
 
 for i in range(5):
-    marks = int(input("Enter your marks: "))
-    total = total + marks
-    if marks < 35:
-        print("Failed")
-        break
-percentage = (total/5)
-
-if percentage <= 100 and percentage >= 90:
-    print(f"total = {total}, percentage = {percentage}, grade = A")
-elif percentage <= 89 and percentage >= 80:
-    print(f"total = {total}, percentage = {percentage}, grade = B")
-elif percentage <= 79 and percentage >= 70:
-    print(f"total = {total}, percentage = {percentage}, grade = C")
-elif percentage <= 69 and percentage >= 60:
-    print(f"total = {total}, percentage = {percentage}, grade = D")
-elif percentage <= 59 and percentage >= 50:
-    print(f"total = {total}, percentage = {percentage}, grade = E")    
-elif percentage <= 49 and percentage >= 35:
-    print(f"total = {total}, percentage = {percentage}, grade = F")
-  
+    for k in range(4-i):
+        print(" ", end=" ")
+    for l in range(0,i+1):
+        if (i == 2 and l == 1) or (i == 3 and (l == 1 or l == 2)):
+            print("   ", end=" ")
+        elif i == 4:
+            print("* *",end=" ")    
+        else:    
+            print("*  ", end=" ")
+    print()
+            

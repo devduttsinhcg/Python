@@ -577,6 +577,21 @@ Price = float(input("Enter the purchase amount: "))
 if Price > 500:
     print(f"Final amount = {Purchase_amount*0.2}")
 
+# Question 6
+
+# 1 IPO MODEL:
+# Input:
+#     take marks of three subjects
+# Processing:
+#    calculate average
+# Output:
+#    Pass or Fail
+
+# 2 ALGORITHM:
+# Start
+# Read the three numbers
+# 
+
     
 
 
