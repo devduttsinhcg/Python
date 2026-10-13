@@ -62,13 +62,14 @@
 # a="hello "
 # print(a*10)
 
-# number = int(input("Enter your number: "))
+number = int(input("Enter your number: "))
 
-# for i in range(2, number):
-#         if number % i == 0:
-#             print(f"{number} is not a prime number.")
-# else:
-#     print(f"{number} is a prime number.")    
+for i in range(2, number):
+    if number % i == 0:
+        print(f"{number} is not a prime number.")
+        break
+else:
+    print(f"{number} is a prime number.")    
 
 # #
 # name = input("Enter your name: ")
@@ -114,7 +115,7 @@
 # ch = input("Enter character: ")
 
 # if ch == "a" or "e" or "i" or "u" :
-#     print("vowel")
+#     print("consonant")
 
 # word ="banana"
 # count=0
@@ -250,22 +251,53 @@
 #     for j in range(1,6-i):
 #         print(j,end="")
 #     print()
-for i in range(5):
-    for j in range(5-i,0, -1):
-        print(j,end="")
+# for i in range(5):
+#     for j in range(5-i,0, -1):
+#         print(j,end="")
 #     print()
 # for i in range(1,6):
 #     for j in print()
 
-for i in range(5):
-    for k in range(4-i):
-        print(" ", end=" ")
-    for l in range(0,i+1):
-        if (i == 2 and l == 1) or (i == 3 and (l == 1 or l == 2)):
-            print("   ", end=" ")
-        elif i == 4:
-            print("* *",end=" ")    
-        else:    
-            print("*  ", end=" ")
-    print()
-            
+# for i in range(5):
+#     for k in range(4-i):
+#         print(" ", end=" ")
+#     for l in range(0,i+1):
+#         if (i == 2 and l == 1) or (i == 3 and (l == 1 or l == 2)):
+#             print("   ", end=" ")
+#         elif i == 4:
+#             print("* *",end=" ")    
+#         else:    
+#             print("*  ", end=" ")
+#     print()
+# row = 1
+# column = 1
+# while row <= 3:
+
+#     while column < 5:
+#         print("*", end="")
+#         column = column + 1
+
+#     print()
+#     row = row + 1
+# i = 1
+# while i <= 3:
+#     print("* * * *")
+#     i += 1
+
+# string = input("Enter the string: ")
+# for i in string:
+#     if chr(48) <= i <= chr(57):
+#         print(i, end="")   
+
+# string = input("Enter the string: ")
+# count = 0
+# for i in string:
+#     if chr(97) <= i <= chr(122):
+#         count += 1        
+# print(count)        
+
+# string = input("Enter your string: ")
+
+# for i in string:
+#     if i not in "aeiou":
+#         print(i, end="")    

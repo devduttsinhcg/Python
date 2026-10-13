@@ -361,41 +361,54 @@
 #     print("Medium password")
 
 # QUESTION 17
-h_marks = 0
-h_name = ""
-for i in range(1,6):
-    v = c = 0
-    marks = int(input(f"Enter the marks of student{i}: "))
-    name = (input(f"Enter the name of student{i}: ")).lower()
-    if 75<= marks <= 100:
-        print("Grade = A")
-    elif 50 <= marks <= 74:
-        print("Grade = B")   
-    elif 35 <= marks <= 49:
-        print("Grade = C")
-    else:
-        print("Fail")
+# h_marks = 0
+# h_name = ""
+# for i in range(1,6):
+#     v = c = 0
+#     marks = int(input(f"Enter the marks of student{i}: "))
+#     name = (input(f"Enter the name of student{i}: ")).lower()
+#     if 75<= marks <= 100:
+#         print("Grade = A")
+#     elif 50 <= marks <= 74:
+#         print("Grade = B")   
+#     elif 35 <= marks <= 49:
+#         print("Grade = C")
+#     else:
+#         print("Fail")
     
-    for j in name:
-        if j in "aeiou":
-            v += 1
-        if j in "bcdfghjklmnpqrstvwxyz":
-            c += 1
-    print(f"Number of vowels : {v}")
-    print(f"Number of vowels : {c}")
-    print(f"NUmber of total characters:{len(name)}")
-    if v > c:
-        print("Number of vowels are greater")
-    if c > v:
-        print("Number of consonants are greater")
-    if marks > h_marks:
-        h_marks = marks
-        h_name = name
-print(h_name, "has highest marks")         
+#     for j in name:
+#         if j in "aeiou":
+#             v += 1
+#         if j in "bcdfghjklmnpqrstvwxyz":
+#             c += 1
+#     print(f"Number of vowels : {v}")
+#     print(f"Number of vowels : {c}")
+#     print(f"NUmber of total characters:{len(name)}")
+#     if v > c:
+#         print("Number of vowels are greater")
+#     if c > v:
+#         print("Number of consonants are greater")
+#     if marks > h_marks:
+#         h_marks = marks
+#         h_name = name
+# print(h_name, "has highest marks")         
 
 # QUESTION 18
-
-
+balance = 0
+for i in range (7):
+    transactions = int(input("Enter the value: "))
+    transactions_type = input("Enter Withdrawl or Deposit: ")
+    if transactions > 0:
+        if transactions_type == "Deposit":
+            balance = balance + transactions
+        if transactions_type == "Withdrawl":
+            if balance > 0:
+                balance = balance - transactions
+            else:
+                print("Rejected withdrawl")
+print(balance)
+if balance < 1000:
+    print("Low balance")
 
 
 

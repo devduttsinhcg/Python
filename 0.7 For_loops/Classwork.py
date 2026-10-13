@@ -12,6 +12,7 @@
 # number = int(input("Enter your number:"))
 # for i in range(1, ):
 #     print(number*i)
+#else
 
 #
 # name = "python"
@@ -82,4 +83,36 @@
 #             else:
 #                 print(" ", end=" ")    
 #         print()
-          
+
+#________________________________________________METHOD 1______________________________________________________
+
+str = input("Enter the string: ")
+flag = True
+count = 0
+
+for i in str:
+    if i == "O" and count < 1:
+        flag = False
+        print("Found")
+        count += 1
+if flag:
+    print("Not found")        
+
+#________________________________________________METHOD 2______________________________________________________
+
+str = input("Enter the string: ")
+flag = False
+
+for i in str:
+    if i == "O" and flag == False:
+        flag = True
+        print("Found")
+
+if not flag:
+    print("Not found")
+
+
+for i in range(3):
+    for j in range(3):
+        break
+    print(i,j)
